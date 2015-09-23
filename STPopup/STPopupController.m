@@ -629,7 +629,7 @@ static NSMutableSet *_retainedPopupControllers;
 {
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     if (toViewController == _containerViewController) {
-        return 0.3;
+        return 0.5;
     }
     else {
         return self.transitionStyle == STPopupTransitionStyleFade ? 0.3 : 0.4;
